@@ -1,5 +1,7 @@
 const solutionsPageData = require('../fixtures/solutions-page-data');
 
+const volumeRecruitmentAndExperiencedHiresFirstParagraph = ".et_pb_column_2 > .et_pb_module > .et_pb_text_inner > p";
+
 const solutionspageSelectors = {
     solutionsHeaderDetail: ".et_pb_text_1 > .et_pb_text_inner > h3",
     headerText: ".et_pb_row_1 > .et_pb_column > .et_pb_module > .et_pb_text_inner > h2",
@@ -11,12 +13,12 @@ const solutionspageSelectors = {
         },
         volumeRecruitment: {
             link: "#menu-solutions > #menu-item-3044 > a",
-            firstParagraph: ".et_pb_column_2 > .et_pb_module > .et_pb_text_inner > p",
+            firstParagraph: volumeRecruitmentAndExperiencedHiresFirstParagraph,
             seeOurOptionsHereLink: ".et_pb_text_inner > :nth-child(3) > a"
         },
         experiencedHires: {
             link: "#menu-solutions > #menu-item-3043 > a",
-            firstParagraph: ".et_pb_column_2 > .et_pb_module > .et_pb_text_inner > p"
+            firstParagraph: volumeRecruitmentAndExperiencedHiresFirstParagraph
         },
         employeeDevelopment: {
             link: "#menu-solutions > #menu-item-3042 > a",
