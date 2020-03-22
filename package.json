@@ -1,0 +1,15 @@
+{
+  "name": "arctic-shores-technical-test",
+  "version": "1.0.0",
+  "description": "A technical test for Arctic Shores",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "cy-open": "node_modules/.bin/cypress open"
+  },
+  "author": "Tim Douglas",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.2.0"
+  }
+}
