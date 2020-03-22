@@ -2,6 +2,7 @@ const solutionsPageData = require('../fixtures/solutions-page-data');
 
 const solutionspageSelectors = {
     solutionsHeaderDetail: ".et_pb_text_1 > .et_pb_text_inner > h3",
+    headerText: ".et_pb_row_1 > .et_pb_column > .et_pb_module > .et_pb_text_inner > h2",
     subsectionNavBar:{
         navBar: "#menu-solutions",
         earlyCareers: "#menu-solutions > #menu-item-3045 > a",
@@ -18,8 +19,9 @@ before(() => {
 
 describe('Solutionspage', () => {
     it('should have "Early Careers" selected by default', () => {
-        
+        cy.get(solutionspageSelectors.headerText).contains('Early Careers');
     })
+
     it('should contain the subsection nav bar', () => {
         cy.get(solutionspageSelectors.subsectionNavBar.navBar).should('be.visible');
     })
